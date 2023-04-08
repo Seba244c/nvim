@@ -5,7 +5,6 @@ vim.g.loaded_netrwPlugin = 1
 local nvim_tree = require("nvim-tree")
 
 nvim_tree.setup {
-    sync_root_with_cwd = true,
     filters = {
         dotfiles = true,
     },
