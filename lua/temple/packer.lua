@@ -51,6 +51,12 @@ return require('packer').startup(function(use)
     -- Buffer
     use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 
+    -- Dashboard
+    use {
+        'startup-nvim/startup.nvim',
+        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }
+
     -- LSP
     use {
         'VonHeikemen/lsp-zero.nvim',
