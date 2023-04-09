@@ -21,9 +21,9 @@ return require('packer').startup(function(use)
     }
     use {
         'tanvirtin/monokai.nvim',
-        config = function()
-            require('monokai').setup { palette = require('monokai').pro }
-        end
+        --config = function()
+        --    require('monokai').setup { palette = require('monokai').pro }
+        --end
     }
 
     use {

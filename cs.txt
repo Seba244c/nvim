@@ -1,0 +1,23 @@
+Tree
+ * d delete
+ * D trash
+ * a create
+ * r rename
+ * R reload
+ * p paste
+ * x cut
+ * o open
+ * pp Open Tree 
+
+Telescope
+ * ps Project Search
+ * pf Project Files
+ * ^p Git Files
+
+Git
+ * <leader>g Lazygit
+ * P push
+ * p pull
+ * <space> stage
+ * a stage all
+ * c commit 
