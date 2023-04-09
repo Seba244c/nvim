@@ -21,3 +21,14 @@ Git
  * <space> stage
  * a stage all
  * c commit 
+
+ LSP
+  * <leader>f Format
+  * rn Rename
+  * ca Code Action
+  * gD Go To Decleration 
+  * gd Go To Definition
+  * gi Go To Implementation
+  * gr Go To References
+  * K hover
+  * ^k Signature Help
