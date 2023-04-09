@@ -46,6 +46,8 @@ return require('packer').startup(function(use)
         },
     }
 
+    use { 'akinsho/toggleterm.nvim', tag = '*' }
+
     -- LSP
     use {
         'VonHeikemen/lsp-zero.nvim',
