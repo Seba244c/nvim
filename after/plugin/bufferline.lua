@@ -18,6 +18,7 @@ require("bufferline").setup {
                 separator = true
             }
         },
+        numbers = "ordinal",
         diagnostics_indicator = function(count, level, diagnostics_dict, context)
             local s = " "
             for e, n in pairs(diagnostics_dict) do
@@ -29,3 +30,14 @@ require("bufferline").setup {
         end,
     }
 }
+
+-- Mapping
+vim.keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<cr>")
+vim.keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<cr>")
+vim.keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<cr>")
+vim.keymap.set("n", "<leader>4", ":BufferLineGoToBuffer 4<cr>")
+vim.keymap.set("n", "<leader>5", ":BufferLineGoToBuffer 5<cr>")
+vim.keymap.set("n", "<leader>6", ":BufferLineGoToBuffer 6<cr>")
+vim.keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<cr>")
+vim.keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<cr>")
+vim.keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<cr>")
