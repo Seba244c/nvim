@@ -1,3 +1,5 @@
+<leader>cs Brings up this cheatsheet
+
 Tree
  * d delete
  * D trash
@@ -24,8 +26,8 @@ Git
 
  LSP
   * <leader>f Format
-  * rn Rename
-  * ca Code Action
+  * <leader>rn Rename
+  * <leader>ca Code Action
   * gD Go To Decleration 
   * gd Go To Definition
   * gi Go To Implementation
