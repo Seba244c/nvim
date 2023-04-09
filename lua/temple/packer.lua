@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
     }
     use {
         'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        requires = { 'nvim-tree/nvim-web-devicons' }
     }
     use 'nvim-treesitter/playground'
     use 'mbbill/undotree'
@@ -47,6 +47,9 @@ return require('packer').startup(function(use)
     }
 
     use { 'akinsho/toggleterm.nvim', tag = '*' }
+
+    -- Buffer
+    use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 
     -- LSP
     use {
