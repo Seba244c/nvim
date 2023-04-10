@@ -13,6 +13,9 @@ local packer_bootstrap = ensure_packer()
 vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
+    -- Custom
+    use { '~/OneDrive/Code/nvim/actions', require= {{ 'nvim-lua/plenary.nvim' }} }
+
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     use {
@@ -21,9 +24,9 @@ return require('packer').startup(function(use)
     }
     use {
         'tanvirtin/monokai.nvim',
-        --config = function()
-        --    require('monokai').setup { palette = require('monokai').pro }
-        --end
+        config = function()
+            require('monokai').setup { palette = require('monokai').pro }
+        end
     }
 
     use {
@@ -72,6 +75,7 @@ return require('packer').startup(function(use)
             'hrsh7th/cmp-nvim-lsp',
             'saadparwaiz1/cmp_luasnip',
             'L3MON4D3/LuaSnip',
+            'rafamadriz/friendly-snippets',
         }
     }
 
