@@ -45,6 +45,8 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
     use 'mfussenegger/nvim-jdtls'
 
+    use 'numToStr/Comment.nvim'
+
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
