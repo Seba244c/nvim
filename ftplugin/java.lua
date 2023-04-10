@@ -58,5 +58,13 @@ local config = {
 -- This starts a new client & server,
 -- or attaches to an existing client & server depending on the `root_dir`.
 -- return config
-require('jdtls').start_or_attach(config)
-vim.notify("Starting JDTLS", "info")
+function Start()
+    require('jdtls').start_or_attach(config)
+    vim.notify("Starting JDTLS", "info")
+end
+
+Start()
+
+-- Keymap
+vim.keymap.set("n", "<leader>ljr", Start) -- LSP JAVA RESTART
+
