@@ -63,6 +63,13 @@ return require('packer').startup(function(use)
         requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     }
 
+    use {
+        'rcarriga/nvim-notify',
+        config = function()
+            vim.notify = require("notify")
+        end
+    }
+
     -- LSP
     use {
         'neovim/nvim-lspconfig',

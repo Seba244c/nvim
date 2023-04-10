@@ -61,6 +61,7 @@ local config = {
 -- or attaches to an existing client & server depending on the `root_dir`.
 -- return config
 require('jdtls').start_or_attach(config)
+    vim.notify("Starting custom jdtls config", "info")
 end
 
 require("mason-lspconfig").setup_handlers {
