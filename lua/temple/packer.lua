@@ -72,6 +72,8 @@ return require('packer').startup(function(use)
         end
     }
 
+    use 'simrat39/symbols-outline.nvim'
+
     -- LSP
     use {
         'neovim/nvim-lspconfig',
