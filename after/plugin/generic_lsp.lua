@@ -1,7 +1,7 @@
 local servers = {
-    'jdtls',
     'lua_ls',
-    'jedi_language_server'
+    'jedi_language_server',
+    'gradle_ls',
 }
 
 -- LSP Setup
