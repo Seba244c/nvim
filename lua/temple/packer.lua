@@ -14,7 +14,7 @@ vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
     -- Custom
-    use { '~/OneDrive/Code/nvim/actions', require= {{ 'nvim-lua/plenary.nvim' }} }
+    use { '~/OneDrive/Code/nvim/actions', require = { { 'nvim-lua/plenary.nvim' } } }
 
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use {'nvim-telescope/telescope-ui-select.nvim' }
+    use { 'nvim-telescope/telescope-ui-select.nvim' }
 
     use {
         'tanvirtin/monokai.nvim',
@@ -65,11 +65,9 @@ return require('packer').startup(function(use)
 
     -- LSP
     use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
+        'neovim/nvim-lspconfig',
         requires = {
-            -- LSP Support
-            'neovim/nvim-lspconfig',
+            -- Actual LSP Support
             'williamboman/mason.nvim',
             'williamboman/mason-lspconfig.nvim',
 
@@ -81,7 +79,6 @@ return require('packer').startup(function(use)
             'rafamadriz/friendly-snippets',
         }
     }
-
     if packer_bootstrap then
         require('packer').sync()
     end
