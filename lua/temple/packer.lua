@@ -15,7 +15,6 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
     -- The best plugin ever, actually useful
     use { 'Seba244c/actions.nvim', require = { { 'akinsho/toggleterm.nvim' } } }
-
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     use {
@@ -25,6 +24,8 @@ return require('packer').startup(function(use)
 
     use { 'nvim-telescope/telescope-ui-select.nvim' }
 
+    use 'folke/tokyonight.nvim'
+    use 'navarasu/onedark.nvim'
     use {
         'tanvirtin/monokai.nvim',
         config = function()
