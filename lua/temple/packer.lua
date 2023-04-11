@@ -13,8 +13,8 @@ local packer_bootstrap = ensure_packer()
 vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
-    -- Custom
-    use { '~/OneDrive/Code/nvim/actions', require = { { 'nvim-lua/plenary.nvim' } } }
+    -- The best plugin ever, actually useful
+    use { 'Seba244c/actions.nvim', require = { { 'akinsho/toggleterm.nvim' } } }
 
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
