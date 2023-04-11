@@ -4,8 +4,8 @@ local workspace_dir = vim.fn.stdpath "data" .. "/site/java/workspace-root/" .. p
 os.execute("mkdir " .. workspace_dir)
 
 -- Get install dir
-local install_path = "C:/Users/sebsn/OneDrive/Code/sdk/jdt-language-server-1.21.0"
-local lombok = vim.fn.stdpath("config") .. "/dependecies/lombok.jar"
+local install_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls"
+local lombok = install_path .. "/lombok.jar"
 -- Root dir
 local root_markers = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" }
 local root_dir = require("jdtls.setup").find_root(root_markers)
@@ -67,4 +67,3 @@ Start()
 
 -- Keymap
 vim.keymap.set("n", "<leader>ljr", Start) -- LSP JAVA RESTART
-
