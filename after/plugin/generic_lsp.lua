@@ -2,6 +2,7 @@ local servers = {
     'lua_ls',
     'jedi_language_server',
     'gradle_ls',
+    'jsonls',
     'jdtls',   -- Only used for jars not for language server
 }
 
